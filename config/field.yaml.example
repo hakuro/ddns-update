@@ -1,0 +1,7 @@
+uri: http://ieserver.net/
+login_action: https://ieserver.net/cgi-bin/dip.cgi
+
+fields:
+    username: username
+    domain: dip.jp
+    password: password_base64
