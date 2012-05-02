@@ -8,8 +8,8 @@ class UpdateDdnsJob
     def initialize(config)
         @agent = Mechanize.new
         @conf = YAML.load_file(config)
-        @conf.each do |idx, val|
-            @conf[idx] = val.unpack("m")[0] if idx =~ /password/
+        @conf["fields"].each do |idx, val|
+            @conf["fields"][idx] = val.unpack("m")[0] if idx =~ /password/
         end
     end
 
