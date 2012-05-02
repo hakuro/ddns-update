@@ -19,7 +19,7 @@ class UpdateDdnsJob
                 @conf["fields"].each do |idx, val|
                     f.field_with(name: idx).value = val
                 end
-            end.submit
+            end.click_button
         end
     end
 end
